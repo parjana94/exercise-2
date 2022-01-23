@@ -1,0 +1,135 @@
+body{
+    background-color: #0d1a2d ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.container{
+    width: 17%;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    background-color: #15273f;
+    padding: 20px;
+}
+.image{
+    position: relative;
+}
+.eq-image{
+    width: 100%;
+    border-radius: 10px;
+}
+.onhover{
+    background-color: #0194a4;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px; 
+    opacity: 0;
+}
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.image:hover .onhover{
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+.image:hover .view{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+.text{
+    margin-top: 20px;
+}
+.text-h1{
+    text-transform: capitalize;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+.text-h1:hover{
+    color: #3aeae7;
+    transition-duration: 0.5s;
+}
+.text-p{
+    font-family: 'Outfit', sans-serif;
+    color: #8094af;
+}
+.price-date{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.price{
+    display: flex;
+}
+.price-h2{
+    color: #00a5a5;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.date{
+    display: flex;
+}
+.text-h3{
+    color: #88a9d4;
+    font-family: 'Outfit', sans-serif;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.price-date::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #2f4159;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 20px
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer-img{
+    width: 20%;
+    margin-top: 35px;
+}
+.footer-h3{
+    margin-top: 30px;
+    color: #617695;
+    margin-left: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+span{
+    color: white;
+}
+span:hover{
+    color: #01a1b9;
+    transition-duration: 0.5s;
+}
+@media only screen and (max-width: 375px){
+    .container{
+        width: 80%;
+        height: 85vh;
+        background-color: white;
+        border-radius: 10px;
+        background-color: #15273f;
+        padding: 20px;
+    }
+}
